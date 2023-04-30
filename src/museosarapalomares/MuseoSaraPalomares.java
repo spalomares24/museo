@@ -15,6 +15,8 @@ public class MuseoSaraPalomares {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        VentanaMuseo vm= new VentanaMuseo();
+        vm.setVisible(true);
     }
     
 }

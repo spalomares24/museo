@@ -34,8 +34,18 @@ public class VentanaMuseo extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btn_artistas.setText("Artistas");
+        btn_artistas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_artistasActionPerformed(evt);
+            }
+        });
 
         btn_cuadros.setText("Cuadros");
+        btn_cuadros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cuadrosActionPerformed(evt);
+            }
+        });
 
         btn_esculturas.setText("Esculturas");
 
@@ -47,9 +57,8 @@ public class VentanaMuseo extends javax.swing.JFrame {
                 .addGap(257, 257, 257)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btn_esculturas, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btn_cuadros, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                        .addComponent(btn_artistas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btn_cuadros, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                    .addComponent(btn_artistas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(253, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -77,6 +86,18 @@ public class VentanaMuseo extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_artistasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_artistasActionPerformed
+        // TODO add your handling code here:
+        DArtista dArtista= new DArtista(this, true);
+        dArtista.setVisible(true);
+    }//GEN-LAST:event_btn_artistasActionPerformed
+
+    private void btn_cuadrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cuadrosActionPerformed
+        // TODO add your handling code here:
+        DCuadro dCuadro= new DCuadro(this,true );
+        dCuadro.setVisible(true);
+    }//GEN-LAST:event_btn_cuadrosActionPerformed
 
     /**
      * @param args the command line arguments

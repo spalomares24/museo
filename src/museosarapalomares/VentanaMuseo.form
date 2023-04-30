@@ -42,10 +42,8 @@
                   <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btn_esculturas" pref="117" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btn_cuadros" pref="117" max="32767" attributes="0"/>
-                          <Component id="btn_artistas" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="btn_cuadros" pref="117" max="32767" attributes="0"/>
+                      <Component id="btn_artistas" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="253" max="32767" attributes="0"/>
               </Group>
@@ -70,11 +68,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Artistas"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_artistasActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_cuadros">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cuadros"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_cuadrosActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_esculturas">
           <Properties>
